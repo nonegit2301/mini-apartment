@@ -1,0 +1,5 @@
+{
+  "name": "Mini Apartment Finder login",
+  "description": "A clean and modern application for browsing, saving, and inquiring about mini apartment rentals. Features light/dark mode, filtering, and a simulated chat for inquiries.",
+  "requestFramePermissions": []
+}

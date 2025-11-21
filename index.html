@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Apartment Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // 'media' or 'class'
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                light: '#0d9488', // teal-600
+                DEFAULT: '#0f766e', // teal-700
+                dark: '#115e59', // teal-800
+              },
+              secondary: {
+                light: '#f0f9ff', // sky-50
+                DEFAULT: '#e0f2fe', // sky-100
+                dark: '#bae6fd', // sky-200
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "bcryptjs": "https://aistudiocdn.com/bcryptjs@^3.0.3",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "dotenv": "https://aistudiocdn.com/dotenv@^17.2.3",
+    "mongoose": "https://aistudiocdn.com/mongoose@^8.19.3",
+    "jsonwebtoken": "https://aistudiocdn.com/jsonwebtoken@^9.0.2"
+  }
+}
+</script>
+<!-- Add Babel to transpile JSX in the browser -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white dark:bg-gray-900">
+    <div id="root"></div>
+    <!-- Change script type to text/babel for Babel to process and add cache-busting -->
+    <script type="text/babel" data-type="module" src="/index.tsx?v=1"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
