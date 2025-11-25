@@ -16,7 +16,7 @@ export interface Apartment {
   area: number;
   bedrooms: number;
   images: string[];
-  status: 'available' | 'rented';
+  status: 'available' | 'sold' | 'pending';
   featured?: boolean;
   description?: string;
   amenities?: string[];
